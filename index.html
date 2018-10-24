@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/orgchart/2.1.3/css/jquery.orgchart.min.css">
+    <script src="./jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/orgchart/2.1.3/js/jquery.orgchart.min.js"></script>
+
+    <title>Prueba MultigrAPP</title>
+  </head>
+  <body>
+
+    <div id="app">
+
+      <p>Ingrese el nombre de la variable</p>
+      <input id="varNombre" type="text" name="" value="">
+      <p>Ingrese el valor de la variable</p>
+      <input id="valor" type="text" name="" value="">
+      <br>
+      <p>Selecione el padre de la variable</p>
+      <select class="" name="selectVar" id="selectVar">
+        <option v-for="node in titles" :value="node.name">{{node.name}}</option>
+      </select>
+
+      <button type="button" name="button" onclick="createConnection()">Crear Variable</button>
+      <br>
+      <div id="chart-container"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
