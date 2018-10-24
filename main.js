@@ -6,7 +6,7 @@ var app = new Vue({
      },
      titles: [
        {
-         "name":"proyecto"
+         "name":"raiz"
        }
      ]
   }
